@@ -1,6 +1,6 @@
 <?php
 
-include "..\be\classes\User.php" ;
+include "../be/classes/User.php" ;
 
 $user1 = new User() ;
 $user2 = new User();
@@ -16,3 +16,4 @@ echo "
     <script type='javascript' src='js/main.js'/>
 ";
 
+?>
