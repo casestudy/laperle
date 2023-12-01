@@ -12,7 +12,7 @@ echo "
 <input name='contactname' value='' /> <br>
 <label for 'phone-number'> Phone Number </label>
 <input name= 'phone number' value='' placeholder='67589043'> <br>
-    <button for 'submit' onclick='return addcontact()'> Submit </button>
+    <button for 'submit' onclick='addcontact()'> Submit </button>
     <script type='javascript' src='js/main.js'/>
 ";
-
+ 
