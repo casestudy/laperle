@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>160</y>
+      <w>380</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;User(me)&gt;&gt;
+--
+-email_address: string
+-username: string
+-password: string
+-phone_number: int
+--
+#Signup(
+-email_address: string
+-username: string
+-password: string
+-phone_number: int) void
+Login(
+email_address: string
+username: string
+password: string
+): void
+#Expense_source(Esource: string): void
+#Expense_details(Eamount: int, Edate: int): String
+#Revenue_source(Rsource: int): void
+#Revenue_details(Ramount: int, Rdate: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>740</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Backend&gt;&gt;
+--
+
+--
+#Duplication(): String
+#Backup(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>160</y>
+      <w>280</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>140</y>
+      <w>280</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;LoginDatabase&gt;&gt;
+--
+
+--
+#Registration(): string
+#SignupVerification(
+	email_address; string, 
+	username: string, 
+	password: string
+	phone_number: int): string
+#LogInVerification(
+	email_address; string, 
+	username: string, 
+	password: string): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>410</y>
+      <w>280</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;340.0;260.0;340.0;260.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>500</y>
+      <w>100</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+login into &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;270.0;80.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>240</y>
+      <w>280</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+stores to &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1030</x>
+      <y>380</y>
+      <w>280</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;TrackingDatabase&gt;&gt;
+--
+
+--
+#ExpenseVerification(
+Eamount: int, 
+Edate: int): boolean
+#RevenueVerification(
+Ramount: int, 
+Rdate: int): boolean
+#InformationStorage(
+Eamount: int, 
+Edate: int
+Ramount: int, 
+Rdate: int): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>710</y>
+      <w>680</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;660.0;90.0;660.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>820</x>
+      <y>20</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>30</y>
+      <w>340</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>320.0;350.0;320.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>20</y>
+      <w>580</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;140.0;10.0;20.0;560.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>50</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
