@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>20</y>
+      <w>210</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Accounts
+--
+-id :int
++Name :string
++AccNo :string
++CoOwner :string
++Address1 :string
++Address2 :string
++City :string
++State :string
++Country :string
++Phone1 :int
++Phone2 :int
++Email :string
++OpeningBalance :float
++IsClosing :bool
++AccBookId :int
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>400</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Transaction
+--
+-id :int
++Date :string
++ExpenseType :int
++IncomeType :int
++IsDeleted :bool
++Title :string
++Notes :string
++RegisterTranExpenseId : int
++RegisterTranIncomeId :int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>480</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Register Transaction
+--
+-RegisterTranId :int
++Amount :float
++ClosingBalance :float
++AccountId : int
++TransactionId : int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>210</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>AccountBook
+--
+-id :int
++BookName :string
++TaxId :string
++Colortag :string
++Address1 :string
++Address2 :string
++city :string
++State :string
++Country :string
++Phone1 :int
++Phone2 :int
++Email :string
++Type :int
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>90</y>
+      <w>560</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>540.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>220</y>
+      <w>510</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>490.0;10.0;10.0;280.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>300</y>
+      <w>90</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>540</y>
+      <w>450</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>430.0;30.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
