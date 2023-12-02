@@ -1,6 +1,6 @@
 <?php
 
-include "..\be\classes\User.php" ;
+include "../be/classes/User.php" ;
 
 $user1 = new User() ;
 $user2 = new User();
@@ -15,4 +15,5 @@ echo "
     <button for 'submit' onclick='addcontact()'> Submit </button>
     <script type='javascript' src='js/main.js'/>
 ";
- 
+
+?>
