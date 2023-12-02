@@ -6,7 +6,7 @@ function alertFunction() {
 
     const xmlhttp = new XMLHttpRequest();
       xmlhttp.onload = function() {
-        document.getElementById("form2Example1").innerHTML = this.responseText;
+        console.log(this.responseText);
       }
       xmlhttp.open("GET", "../../be/index.php");
     xmlhttp.send();
