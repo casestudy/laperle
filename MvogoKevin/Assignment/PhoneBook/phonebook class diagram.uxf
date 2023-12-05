@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Picture
+--
+-Height: int
+-Width : int
+--
+-setpicture(int height, int width): return void
+-getheight(): int
+-getwidth(): int
+-changepicture():int
+-deletepicture():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>20</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Phone number
+--
++international areacode : int
++Prefix : int
++Number : int
+--
+#Setphonenumber(int international areacode, int prefix, int number): return void
++getinternational areacode(): int
++getprefix():int
++getnumber():int
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>400</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Category/Group
+--
++title :string
++description :string
+--
+#setcategory(string title, string description):return void
++changetitle():string
++deletetitle():string
++addtitle():string
++adddescription():string
++changedescription():string
++deletedescription():string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>400</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Contact
+--
++Firstname :string
++Lastname :string
++email :string
++Pseudo :string
+--
+#setContact(string firstname, string lastname, string email, string pseudo): return void
++getFirstname(): string
++getLastname(): string
++getemail(): string
++getPseudo(): string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>10</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Phonebook
+--
++list&lt;contact&gt;member
+--
++add(contact x): return void
++deleteContact(contact y): return void
++Printlist(): return void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>410</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Address
+--
++Quarter :string
++Postalbox :string
++Postalcode :string
++street :string
+--
+#setAddress(string Quarter, string postalbox, string postalcode, string street): return void
++getQuarter :string
++getpostalbox :string
++getpostalcode :string
++getstreet(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>190</y>
+      <w>40</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>
+m2=n
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>460</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>
+m2=n
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>190</y>
+      <w>140</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>
+m2=1
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>200</y>
+      <w>120</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>
+m2=1
+m1=n
+</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>480</y>
+      <w>220</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>
+m2=n
+m1=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+</diagram>
