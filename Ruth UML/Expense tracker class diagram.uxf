@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>50</x><y>20</y><w>280</w><h>240</h></coordinates><panel_attributes>User Income Class
+
+--
+value: int
+name: string
+date: DateTime
+--
+Income(value: int, name: string, date: DateTime)
+GetValue (): int
+SetValue(value:int)
+GetName (): string
+SetName(name:string)
+GetDate (): DateTime
+SetDate(date: DateTime)
+Save()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>380</y><w>440</w><h>190</h></coordinates><panel_attributes>Income Manager Class
+--
+ExpensesList&lt;Expenses&gt;
+IncomeList: List &lt;income&gt;
+--
+Add_Expense(value:int, name: string, date: DateTime)
+Add_RecurringExpense(name:string, value:int, date: DateTime, period:string)
+Add_Income(value:int, name: string, date: DateTime)
+Add_RecurringIncome(name:string, value:int, date: DateTime, period:string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>30</y><w>290</w><h>230</h></coordinates><panel_attributes>Expenses Class
+
+--
+value: int
+name: string
+date: DateTime
+--
+Expense(value:int, name: string, date: DateTime)
+GetValue (): int
+SetValue(value:int)
+GetName (): string
+SetName(name:string)
+GetDate (): DateTime
+SetDate(date: DateTime)
+Save()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>250</y><w>120</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Records data 
+with respect
+to user income
+class</panel_attributes><additional_attributes>10;10;10;250;100;250</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>250</y><w>200</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Records data 
+with respect to
+expense class</panel_attributes><additional_attributes>100;10;100;260;10;260</additional_attributes></element></diagram>
