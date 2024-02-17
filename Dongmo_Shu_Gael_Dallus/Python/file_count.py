@@ -26,7 +26,7 @@ def count_words(file_path):
 
 
 def main():
-    file_path = "Python/shakespeare.txt"
+    file_path = "./shakespeare.txt"
     target_word = input("Enter the word to search for: ").lower()
 
     total_words, occurrences = count_words(file_path)
